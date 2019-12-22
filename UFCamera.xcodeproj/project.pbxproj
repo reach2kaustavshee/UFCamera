@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		272AD87823AEA3500089589D /* UFCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272AD86E23AEA3500089589D /* UFCamera.framework */; };
+		272AD87D23AEA3500089589D /* UFCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272AD87C23AEA3500089589D /* UFCameraTests.swift */; };
+		272AD87F23AEA3500089589D /* UFCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 272AD87123AEA3500089589D /* UFCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		275B63D423AEA4F400578E96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B63D323AEA4F400578E96 /* AppDelegate.swift */; };
+		275B63D623AEA4F400578E96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B63D523AEA4F400578E96 /* SceneDelegate.swift */; };
+		275B63D823AEA4F400578E96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B63D723AEA4F400578E96 /* ViewController.swift */; };
+		275B63DB23AEA4F400578E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275B63D923AEA4F400578E96 /* Main.storyboard */; };
+		275B63DD23AEA4F600578E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275B63DC23AEA4F600578E96 /* Assets.xcassets */; };
+		275B63E023AEA4F600578E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275B63DE23AEA4F600578E96 /* LaunchScreen.storyboard */; };
+		275B63EB23AEA4F600578E96 /* UFCameraEGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B63EA23AEA4F600578E96 /* UFCameraEGTests.swift */; };
+		275B63F623AEA4F600578E96 /* UFCameraEGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B63F523AEA4F600578E96 /* UFCameraEGUITests.swift */; };
+		275B640123AEA70600578E96 /* UFCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272AD86E23AEA3500089589D /* UFCamera.framework */; };
+		275B640223AEA70600578E96 /* UFCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 272AD86E23AEA3500089589D /* UFCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		275B640823AF2A7500578E96 /* UFCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B640723AF2A7500578E96 /* UFCameraView.swift */; };
+		275B640923AF2A9C00578E96 /* UFCameraView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 275B640723AF2A7500578E96 /* UFCameraView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		275B640B23AF2B6400578E96 /* UFCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275B640A23AF2B6400578E96 /* UFCameraView.xib */; };
+		276FFB2F23AFDB8E0034841F /* UFCameraLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276FFB2E23AFDB8E0034841F /* UFCameraLayerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		272AD87923AEA3500089589D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 272AD86523AEA3500089589D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 272AD86D23AEA3500089589D;
+			remoteInfo = UFCamera;
+		};
+		275B63E723AEA4F600578E96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 272AD86523AEA3500089589D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275B63D023AEA4F400578E96;
+			remoteInfo = UFCameraEG;
+		};
+		275B63F223AEA4F600578E96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 272AD86523AEA3500089589D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275B63D023AEA4F400578E96;
+			remoteInfo = UFCameraEG;
+		};
+		275B640323AEA70600578E96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 272AD86523AEA3500089589D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 272AD86D23AEA3500089589D;
+			remoteInfo = UFCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		275B640523AEA70600578E96 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				275B640223AEA70600578E96 /* UFCamera.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		272AD86E23AEA3500089589D /* UFCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UFCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		272AD87123AEA3500089589D /* UFCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UFCamera.h; sourceTree = "<group>"; };
+		272AD87223AEA3500089589D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		272AD87723AEA3500089589D /* UFCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UFCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		272AD87C23AEA3500089589D /* UFCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraTests.swift; sourceTree = "<group>"; };
+		272AD87E23AEA3500089589D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275B63D123AEA4F400578E96 /* UFCameraEG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UFCameraEG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		275B63D323AEA4F400578E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		275B63D523AEA4F400578E96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		275B63D723AEA4F400578E96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		275B63DA23AEA4F400578E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		275B63DC23AEA4F600578E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		275B63DF23AEA4F600578E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		275B63E123AEA4F600578E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275B63E623AEA4F600578E96 /* UFCameraEGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UFCameraEGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		275B63EA23AEA4F600578E96 /* UFCameraEGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraEGTests.swift; sourceTree = "<group>"; };
+		275B63EC23AEA4F600578E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275B63F123AEA4F600578E96 /* UFCameraEGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UFCameraEGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		275B63F523AEA4F600578E96 /* UFCameraEGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraEGUITests.swift; sourceTree = "<group>"; };
+		275B63F723AEA4F600578E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275B640723AF2A7500578E96 /* UFCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraView.swift; sourceTree = "<group>"; };
+		275B640A23AF2B6400578E96 /* UFCameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UFCameraView.xib; sourceTree = "<group>"; };
+		276FFB2E23AFDB8E0034841F /* UFCameraLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraLayerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		272AD86B23AEA3500089589D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272AD87423AEA3500089589D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272AD87823AEA3500089589D /* UFCamera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275B63CE23AEA4F400578E96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275B640123AEA70600578E96 /* UFCamera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275B63E323AEA4F600578E96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275B63EE23AEA4F600578E96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		272AD86423AEA3500089589D = {
+			isa = PBXGroup;
+			children = (
+				272AD87023AEA3500089589D /* UFCamera */,
+				272AD87B23AEA3500089589D /* UFCameraTests */,
+				275B63D223AEA4F400578E96 /* UFCameraEG */,
+				275B63E923AEA4F600578E96 /* UFCameraEGTests */,
+				275B63F423AEA4F600578E96 /* UFCameraEGUITests */,
+				272AD86F23AEA3500089589D /* Products */,
+				272AD8AE23AEA3910089589D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		272AD86F23AEA3500089589D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				272AD86E23AEA3500089589D /* UFCamera.framework */,
+				272AD87723AEA3500089589D /* UFCameraTests.xctest */,
+				275B63D123AEA4F400578E96 /* UFCameraEG.app */,
+				275B63E623AEA4F600578E96 /* UFCameraEGTests.xctest */,
+				275B63F123AEA4F600578E96 /* UFCameraEGUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		272AD87023AEA3500089589D /* UFCamera */ = {
+			isa = PBXGroup;
+			children = (
+				272AD87123AEA3500089589D /* UFCamera.h */,
+				275B640623AF29E700578E96 /* Source */,
+				272AD87223AEA3500089589D /* Info.plist */,
+			);
+			path = UFCamera;
+			sourceTree = "<group>";
+		};
+		272AD87B23AEA3500089589D /* UFCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				272AD87C23AEA3500089589D /* UFCameraTests.swift */,
+				272AD87E23AEA3500089589D /* Info.plist */,
+			);
+			path = UFCameraTests;
+			sourceTree = "<group>";
+		};
+		272AD8AE23AEA3910089589D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		275B63D223AEA4F400578E96 /* UFCameraEG */ = {
+			isa = PBXGroup;
+			children = (
+				275B63D323AEA4F400578E96 /* AppDelegate.swift */,
+				275B63D523AEA4F400578E96 /* SceneDelegate.swift */,
+				275B63D723AEA4F400578E96 /* ViewController.swift */,
+				275B63D923AEA4F400578E96 /* Main.storyboard */,
+				275B63DC23AEA4F600578E96 /* Assets.xcassets */,
+				275B63DE23AEA4F600578E96 /* LaunchScreen.storyboard */,
+				275B63E123AEA4F600578E96 /* Info.plist */,
+			);
+			path = UFCameraEG;
+			sourceTree = "<group>";
+		};
+		275B63E923AEA4F600578E96 /* UFCameraEGTests */ = {
+			isa = PBXGroup;
+			children = (
+				275B63EA23AEA4F600578E96 /* UFCameraEGTests.swift */,
+				275B63EC23AEA4F600578E96 /* Info.plist */,
+			);
+			path = UFCameraEGTests;
+			sourceTree = "<group>";
+		};
+		275B63F423AEA4F600578E96 /* UFCameraEGUITests */ = {
+			isa = PBXGroup;
+			children = (
+				275B63F523AEA4F600578E96 /* UFCameraEGUITests.swift */,
+				275B63F723AEA4F600578E96 /* Info.plist */,
+			);
+			path = UFCameraEGUITests;
+			sourceTree = "<group>";
+		};
+		275B640623AF29E700578E96 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				276FFB2C23AFDB630034841F /* Module */,
+				275B640723AF2A7500578E96 /* UFCameraView.swift */,
+				275B640A23AF2B6400578E96 /* UFCameraView.xib */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		276FFB2C23AFDB630034841F /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				276FFB2D23AFDB700034841F /* Camera Layer */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		276FFB2D23AFDB700034841F /* Camera Layer */ = {
+			isa = PBXGroup;
+			children = (
+				276FFB2E23AFDB8E0034841F /* UFCameraLayerView.swift */,
+			);
+			path = "Camera Layer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		272AD86923AEA3500089589D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272AD87F23AEA3500089589D /* UFCamera.h in Headers */,
+				275B640923AF2A9C00578E96 /* UFCameraView.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		272AD86D23AEA3500089589D /* UFCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 272AD88223AEA3500089589D /* Build configuration list for PBXNativeTarget "UFCamera" */;
+			buildPhases = (
+				272AD86923AEA3500089589D /* Headers */,
+				272AD86A23AEA3500089589D /* Sources */,
+				272AD86B23AEA3500089589D /* Frameworks */,
+				272AD86C23AEA3500089589D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UFCamera;
+			productName = UFCamera;
+			productReference = 272AD86E23AEA3500089589D /* UFCamera.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		272AD87623AEA3500089589D /* UFCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 272AD88523AEA3500089589D /* Build configuration list for PBXNativeTarget "UFCameraTests" */;
+			buildPhases = (
+				272AD87323AEA3500089589D /* Sources */,
+				272AD87423AEA3500089589D /* Frameworks */,
+				272AD87523AEA3500089589D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				272AD87A23AEA3500089589D /* PBXTargetDependency */,
+			);
+			name = UFCameraTests;
+			productName = UFCameraTests;
+			productReference = 272AD87723AEA3500089589D /* UFCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		275B63D023AEA4F400578E96 /* UFCameraEG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275B63F823AEA4F600578E96 /* Build configuration list for PBXNativeTarget "UFCameraEG" */;
+			buildPhases = (
+				275B63CD23AEA4F400578E96 /* Sources */,
+				275B63CE23AEA4F400578E96 /* Frameworks */,
+				275B63CF23AEA4F400578E96 /* Resources */,
+				275B640523AEA70600578E96 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				275B640423AEA70600578E96 /* PBXTargetDependency */,
+			);
+			name = UFCameraEG;
+			productName = UFCameraEG;
+			productReference = 275B63D123AEA4F400578E96 /* UFCameraEG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		275B63E523AEA4F600578E96 /* UFCameraEGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275B63FB23AEA4F600578E96 /* Build configuration list for PBXNativeTarget "UFCameraEGTests" */;
+			buildPhases = (
+				275B63E223AEA4F600578E96 /* Sources */,
+				275B63E323AEA4F600578E96 /* Frameworks */,
+				275B63E423AEA4F600578E96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				275B63E823AEA4F600578E96 /* PBXTargetDependency */,
+			);
+			name = UFCameraEGTests;
+			productName = UFCameraEGTests;
+			productReference = 275B63E623AEA4F600578E96 /* UFCameraEGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		275B63F023AEA4F600578E96 /* UFCameraEGUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 275B63FE23AEA4F600578E96 /* Build configuration list for PBXNativeTarget "UFCameraEGUITests" */;
+			buildPhases = (
+				275B63ED23AEA4F600578E96 /* Sources */,
+				275B63EE23AEA4F600578E96 /* Frameworks */,
+				275B63EF23AEA4F600578E96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				275B63F323AEA4F600578E96 /* PBXTargetDependency */,
+			);
+			name = UFCameraEGUITests;
+			productName = UFCameraEGUITests;
+			productReference = 275B63F123AEA4F600578E96 /* UFCameraEGUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		272AD86523AEA3500089589D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Kaustav Shee";
+				TargetAttributes = {
+					272AD86D23AEA3500089589D = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+					272AD87623AEA3500089589D = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					275B63D023AEA4F400578E96 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					275B63E523AEA4F600578E96 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 275B63D023AEA4F400578E96;
+					};
+					275B63F023AEA4F600578E96 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 275B63D023AEA4F400578E96;
+					};
+				};
+			};
+			buildConfigurationList = 272AD86823AEA3500089589D /* Build configuration list for PBXProject "UFCamera" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 272AD86423AEA3500089589D;
+			productRefGroup = 272AD86F23AEA3500089589D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				272AD86D23AEA3500089589D /* UFCamera */,
+				272AD87623AEA3500089589D /* UFCameraTests */,
+				275B63D023AEA4F400578E96 /* UFCameraEG */,
+				275B63E523AEA4F600578E96 /* UFCameraEGTests */,
+				275B63F023AEA4F600578E96 /* UFCameraEGUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		272AD86C23AEA3500089589D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275B640B23AF2B6400578E96 /* UFCameraView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272AD87523AEA3500089589D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275B63CF23AEA4F400578E96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275B63E023AEA4F600578E96 /* LaunchScreen.storyboard in Resources */,
+				275B63DD23AEA4F600578E96 /* Assets.xcassets in Resources */,
+				275B63DB23AEA4F400578E96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275B63E423AEA4F600578E96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275B63EF23AEA4F600578E96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		272AD86A23AEA3500089589D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276FFB2F23AFDB8E0034841F /* UFCameraLayerView.swift in Sources */,
+				275B640823AF2A7500578E96 /* UFCameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272AD87323AEA3500089589D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272AD87D23AEA3500089589D /* UFCameraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275B63CD23AEA4F400578E96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275B63D823AEA4F400578E96 /* ViewController.swift in Sources */,
+				275B63D423AEA4F400578E96 /* AppDelegate.swift in Sources */,
+				275B63D623AEA4F400578E96 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275B63E223AEA4F600578E96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275B63EB23AEA4F600578E96 /* UFCameraEGTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		275B63ED23AEA4F600578E96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275B63F623AEA4F600578E96 /* UFCameraEGUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		272AD87A23AEA3500089589D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 272AD86D23AEA3500089589D /* UFCamera */;
+			targetProxy = 272AD87923AEA3500089589D /* PBXContainerItemProxy */;
+		};
+		275B63E823AEA4F600578E96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275B63D023AEA4F400578E96 /* UFCameraEG */;
+			targetProxy = 275B63E723AEA4F600578E96 /* PBXContainerItemProxy */;
+		};
+		275B63F323AEA4F600578E96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275B63D023AEA4F400578E96 /* UFCameraEG */;
+			targetProxy = 275B63F223AEA4F600578E96 /* PBXContainerItemProxy */;
+		};
+		275B640423AEA70600578E96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 272AD86D23AEA3500089589D /* UFCamera */;
+			targetProxy = 275B640323AEA70600578E96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		275B63D923AEA4F400578E96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275B63DA23AEA4F400578E96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		275B63DE23AEA4F600578E96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275B63DF23AEA4F600578E96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		272AD88023AEA3500089589D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		272AD88123AEA3500089589D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		272AD88323AEA3500089589D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JAJ2D4LP8N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UFCamera/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.com.UFCamera;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		272AD88423AEA3500089589D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JAJ2D4LP8N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UFCamera/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.com.UFCamera;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		272AD88623AEA3500089589D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JAJ2D4LP8N;
+				INFOPLIST_FILE = UFCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.com.UFCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		272AD88723AEA3500089589D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JAJ2D4LP8N;
+				INFOPLIST_FILE = UFCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.com.UFCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		275B63F923AEA4F600578E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JAJ2D4LP8N;
+				INFOPLIST_FILE = UFCameraEG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.com.UFCameraEG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		275B63FA23AEA4F600578E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JAJ2D4LP8N;
+				INFOPLIST_FILE = UFCameraEG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.com.UFCameraEG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		275B63FC23AEA4F600578E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JAJ2D4LP8N;
+				INFOPLIST_FILE = UFCameraEGTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.com.UFCameraEGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UFCameraEG.app/UFCameraEG";
+			};
+			name = Debug;
+		};
+		275B63FD23AEA4F600578E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JAJ2D4LP8N;
+				INFOPLIST_FILE = UFCameraEGTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.com.UFCameraEGTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UFCameraEG.app/UFCameraEG";
+			};
+			name = Release;
+		};
+		275B63FF23AEA4F600578E96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JAJ2D4LP8N;
+				INFOPLIST_FILE = UFCameraEGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.com.UFCameraEGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UFCameraEG;
+			};
+			name = Debug;
+		};
+		275B640023AEA4F600578E96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JAJ2D4LP8N;
+				INFOPLIST_FILE = UFCameraEGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ks.com.UFCameraEGUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UFCameraEG;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		272AD86823AEA3500089589D /* Build configuration list for PBXProject "UFCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				272AD88023AEA3500089589D /* Debug */,
+				272AD88123AEA3500089589D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		272AD88223AEA3500089589D /* Build configuration list for PBXNativeTarget "UFCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				272AD88323AEA3500089589D /* Debug */,
+				272AD88423AEA3500089589D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		272AD88523AEA3500089589D /* Build configuration list for PBXNativeTarget "UFCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				272AD88623AEA3500089589D /* Debug */,
+				272AD88723AEA3500089589D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275B63F823AEA4F600578E96 /* Build configuration list for PBXNativeTarget "UFCameraEG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275B63F923AEA4F600578E96 /* Debug */,
+				275B63FA23AEA4F600578E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275B63FB23AEA4F600578E96 /* Build configuration list for PBXNativeTarget "UFCameraEGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275B63FC23AEA4F600578E96 /* Debug */,
+				275B63FD23AEA4F600578E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		275B63FE23AEA4F600578E96 /* Build configuration list for PBXNativeTarget "UFCameraEGUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275B63FF23AEA4F600578E96 /* Debug */,
+				275B640023AEA4F600578E96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 272AD86523AEA3500089589D /* Project object */;
+}
