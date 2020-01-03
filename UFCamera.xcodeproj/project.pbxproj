@@ -10,6 +10,10 @@
 		272AD87823AEA3500089589D /* UFCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272AD86E23AEA3500089589D /* UFCamera.framework */; };
 		272AD87D23AEA3500089589D /* UFCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272AD87C23AEA3500089589D /* UFCameraTests.swift */; };
 		272AD87F23AEA3500089589D /* UFCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 272AD87123AEA3500089589D /* UFCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		273616F423BFD3E3005276C4 /* UFCameraViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273616F323BFD3E3005276C4 /* UFCameraViewTests.swift */; };
+		273616F823BFD420005276C4 /* UFCameraLayerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273616F723BFD420005276C4 /* UFCameraLayerViewTests.swift */; };
+		273616FA23BFD4A0005276C4 /* FeatureList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 273616F923BFD4A0005276C4 /* FeatureList.plist */; };
+		273616FC23BFD9D2005276C4 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 273616FB23BFD9D2005276C4 /* settings.png */; };
 		275B63D423AEA4F400578E96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B63D323AEA4F400578E96 /* AppDelegate.swift */; };
 		275B63D623AEA4F400578E96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B63D523AEA4F400578E96 /* SceneDelegate.swift */; };
 		275B63D823AEA4F400578E96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B63D723AEA4F400578E96 /* ViewController.swift */; };
@@ -24,6 +28,11 @@
 		275B640923AF2A9C00578E96 /* UFCameraView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 275B640723AF2A7500578E96 /* UFCameraView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		275B640B23AF2B6400578E96 /* UFCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275B640A23AF2B6400578E96 /* UFCameraView.xib */; };
 		276FFB2F23AFDB8E0034841F /* UFCameraLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276FFB2E23AFDB8E0034841F /* UFCameraLayerView.swift */; };
+		27B7745923BE72FC00173572 /* Vid.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B7745423BE72FB00173572 /* Vid.png */; };
+		27B7745A23BE72FC00173572 /* video_shutter.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B7745523BE72FB00173572 /* video_shutter.png */; };
+		27B7745B23BE72FC00173572 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B7745623BE72FB00173572 /* camera.png */; };
+		27B7745C23BE72FC00173572 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B7745723BE72FC00173572 /* menu.png */; };
+		27B7745D23BE72FC00173572 /* still_shutter.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B7745823BE72FC00173572 /* still_shutter.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +87,10 @@
 		272AD87723AEA3500089589D /* UFCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UFCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		272AD87C23AEA3500089589D /* UFCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraTests.swift; sourceTree = "<group>"; };
 		272AD87E23AEA3500089589D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		273616F323BFD3E3005276C4 /* UFCameraViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraViewTests.swift; sourceTree = "<group>"; };
+		273616F723BFD420005276C4 /* UFCameraLayerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraLayerViewTests.swift; sourceTree = "<group>"; };
+		273616F923BFD4A0005276C4 /* FeatureList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FeatureList.plist; sourceTree = "<group>"; };
+		273616FB23BFD9D2005276C4 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		275B63D123AEA4F400578E96 /* UFCameraEG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UFCameraEG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		275B63D323AEA4F400578E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		275B63D523AEA4F400578E96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +108,11 @@
 		275B640723AF2A7500578E96 /* UFCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraView.swift; sourceTree = "<group>"; };
 		275B640A23AF2B6400578E96 /* UFCameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UFCameraView.xib; sourceTree = "<group>"; };
 		276FFB2E23AFDB8E0034841F /* UFCameraLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraLayerView.swift; sourceTree = "<group>"; };
+		27B7745423BE72FB00173572 /* Vid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vid.png; sourceTree = "<group>"; };
+		27B7745523BE72FB00173572 /* video_shutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_shutter.png; sourceTree = "<group>"; };
+		27B7745623BE72FB00173572 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		27B7745723BE72FC00173572 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		27B7745823BE72FC00173572 /* still_shutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = still_shutter.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				272AD87123AEA3500089589D /* UFCamera.h */,
+				27B7745323BE72CC00173572 /* Images */,
 				275B640623AF29E700578E96 /* Source */,
 				272AD87223AEA3500089589D /* Info.plist */,
 			);
@@ -176,6 +195,7 @@
 		272AD87B23AEA3500089589D /* UFCameraTests */ = {
 			isa = PBXGroup;
 			children = (
+				273616F223BFD3A0005276C4 /* Source */,
 				272AD87C23AEA3500089589D /* UFCameraTests.swift */,
 				272AD87E23AEA3500089589D /* Info.plist */,
 			);
@@ -187,6 +207,31 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		273616F223BFD3A0005276C4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				273616F523BFD3F8005276C4 /* Module */,
+				273616F323BFD3E3005276C4 /* UFCameraViewTests.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		273616F523BFD3F8005276C4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				273616F623BFD404005276C4 /* Camera Layer */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		273616F623BFD404005276C4 /* Camera Layer */ = {
+			isa = PBXGroup;
+			children = (
+				273616F723BFD420005276C4 /* UFCameraLayerViewTests.swift */,
+			);
+			path = "Camera Layer";
 			sourceTree = "<group>";
 		};
 		275B63D223AEA4F400578E96 /* UFCameraEG */ = {
@@ -224,6 +269,7 @@
 		275B640623AF29E700578E96 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				273616F923BFD4A0005276C4 /* FeatureList.plist */,
 				276FFB2C23AFDB630034841F /* Module */,
 				275B640723AF2A7500578E96 /* UFCameraView.swift */,
 				275B640A23AF2B6400578E96 /* UFCameraView.xib */,
@@ -245,6 +291,19 @@
 				276FFB2E23AFDB8E0034841F /* UFCameraLayerView.swift */,
 			);
 			path = "Camera Layer";
+			sourceTree = "<group>";
+		};
+		27B7745323BE72CC00173572 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				273616FB23BFD9D2005276C4 /* settings.png */,
+				27B7745623BE72FB00173572 /* camera.png */,
+				27B7745723BE72FC00173572 /* menu.png */,
+				27B7745823BE72FC00173572 /* still_shutter.png */,
+				27B7745423BE72FB00173572 /* Vid.png */,
+				27B7745523BE72FB00173572 /* video_shutter.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,7 +469,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273616FC23BFD9D2005276C4 /* settings.png in Resources */,
+				273616FA23BFD4A0005276C4 /* FeatureList.plist in Resources */,
+				27B7745D23BE72FC00173572 /* still_shutter.png in Resources */,
 				275B640B23AF2B6400578E96 /* UFCameraView.xib in Resources */,
+				27B7745C23BE72FC00173572 /* menu.png in Resources */,
+				27B7745A23BE72FC00173572 /* video_shutter.png in Resources */,
+				27B7745B23BE72FC00173572 /* camera.png in Resources */,
+				27B7745923BE72FC00173572 /* Vid.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +527,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273616F423BFD3E3005276C4 /* UFCameraViewTests.swift in Sources */,
 				272AD87D23AEA3500089589D /* UFCameraTests.swift in Sources */,
+				273616F823BFD420005276C4 /* UFCameraLayerViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

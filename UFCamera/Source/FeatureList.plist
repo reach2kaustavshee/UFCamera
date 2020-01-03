@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>section_header</key>
+		<string>Camera Mode</string>
+		<key>ContentItems</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Camera</string>
+				<key>image</key>
+				<string>abc.png</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Video</string>
+				<key>image</key>
+				<string>abc.png</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>section_header</key>
+		<string>Other Mode</string>
+		<key>ContentItems</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>QR Scanner</string>
+				<key>image</key>
+				<string>abc.png</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Bar Code Scanner</string>
+				<key>image</key>
+				<string>abc.png</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Object Identifier</string>
+				<key>image</key>
+				<string>abc.png</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PDF Scanner</string>
+				<key>image</key>
+				<string>abc.png</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

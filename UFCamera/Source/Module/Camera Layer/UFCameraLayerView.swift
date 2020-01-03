@@ -175,6 +175,29 @@ extension UFCameraLayerView {
         super.didMoveToSuperview()
     }
     
+    override func layoutSubviews() {
+        self.previewLayer?.frame = self.frame
+        switch UIApplication.shared.statusBarOrientation {
+        case .portrait:
+            self.previewLayer?.connection?.videoOrientation = .portrait
+            break
+        case .portraitUpsideDown:
+            self.previewLayer?.connection?.videoOrientation = .portraitUpsideDown
+            break
+        case .landscapeLeft:
+            self.previewLayer?.connection?.videoOrientation = .landscapeLeft
+            break
+        case .landscapeRight:
+            self.previewLayer?.connection?.videoOrientation = .landscapeRight
+            break
+        default:
+            self.previewLayer?.connection?.videoOrientation = .portrait
+            break
+
+        }
+        super.layoutSubviews()
+    }
+    
 }
 
 

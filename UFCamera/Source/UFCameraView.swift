@@ -11,6 +11,15 @@ import UIKit
 class UFCameraView: UIView {
     
     var view:UIView!
+    
+    var menuButton:UIButton!
+    var viewMenuContainer:UIView!
+    
+    var settingsButton:UIButton!
+    var viewSettingsContainer:UIView!
+    
+    var menuWidthConstraint:NSLayoutConstraint!
+    var settingsWidthContraint:NSLayoutConstraint!
 
     internal override func awakeFromNib() {
         super.awakeFromNib()
@@ -56,7 +65,54 @@ class UFCameraView: UIView {
     }
     
     private func loadAllSubviews() {
-        
+        if let vw = self.view.viewWithTag(101) {
+            self.viewMenuContainer = vw
+        }
+        if let btn = self.view.viewWithTag(102) as? UIButton {
+            self.menuButton = btn
+            self.menuButton.addTarget(self, action: #selector(menuButtonClicked(_:)), for: .touchUpInside)
+        }
+        if let cons = self.viewMenuContainer.constraints.filter({ $0.identifier == "consMenuWidth" }).first {
+            self.menuWidthConstraint = cons
+        }
+        if let vw = self.view.viewWithTag(103) {
+            self.viewSettingsContainer = vw
+        }
+        //settingsButton
+        if let btn = self.view.viewWithTag(104) as? UIButton {
+            self.settingsButton = btn
+            self.settingsButton.addTarget(self, action: #selector(settingsButtonClicked(_:)), for: .touchUpInside)
+        }
+        if let cons = self.viewSettingsContainer.constraints.filter({ $0.identifier == "consSettingsWidth" }).first {
+            self.settingsWidthContraint = cons
+        }
+    }
+    
+    override func willMove(toSuperview newSuperview: UIView?) {
+        self.menuWidthConstraint.constant = 0.0
+        self.settingsWidthContraint.constant = 0.0
+        super.willMove(toSuperview: newSuperview)
+    }
+    
+    @objc private func menuButtonClicked(_ btn:UIButton) {
+        if self.menuWidthConstraint.constant == 0.0 {
+            self.menuWidthConstraint.constant = 70.0
+        }else{
+            self.menuWidthConstraint.constant = 0.0
+        }
+        UIView.animate(withDuration: 0.35) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    @objc private func settingsButtonClicked(_ btn:UIButton) {
+        if self.settingsWidthContraint.constant == 0.0 {
+            self.settingsWidthContraint.constant = 50.0
+        }else{
+            self.settingsWidthContraint.constant = 0.0
+        }
+        UIView.animate(withDuration: 0.35) {
+            self.view.layoutIfNeeded()
+        }
     }
     
     deinit {
