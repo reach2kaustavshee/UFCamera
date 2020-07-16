@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		272AD87823AEA3500089589D /* UFCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272AD86E23AEA3500089589D /* UFCamera.framework */; };
 		272AD87D23AEA3500089589D /* UFCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272AD87C23AEA3500089589D /* UFCameraTests.swift */; };
-		272AD87F23AEA3500089589D /* UFCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 272AD87123AEA3500089589D /* UFCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		272AD87F23AEA3500089589D /* UFCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 272AD87123AEA3500089589D /* UFCamera.h */; platformFilter = ios; settings = {ATTRIBUTES = (Public, ); }; };
 		273616F423BFD3E3005276C4 /* UFCameraViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273616F323BFD3E3005276C4 /* UFCameraViewTests.swift */; };
 		273616F823BFD420005276C4 /* UFCameraLayerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273616F723BFD420005276C4 /* UFCameraLayerViewTests.swift */; };
 		273616FA23BFD4A0005276C4 /* FeatureList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 273616F923BFD4A0005276C4 /* FeatureList.plist */; };
@@ -24,15 +24,26 @@
 		275B63F623AEA4F600578E96 /* UFCameraEGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B63F523AEA4F600578E96 /* UFCameraEGUITests.swift */; };
 		275B640123AEA70600578E96 /* UFCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272AD86E23AEA3500089589D /* UFCamera.framework */; };
 		275B640223AEA70600578E96 /* UFCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 272AD86E23AEA3500089589D /* UFCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		275B640823AF2A7500578E96 /* UFCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B640723AF2A7500578E96 /* UFCameraView.swift */; };
-		275B640923AF2A9C00578E96 /* UFCameraView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 275B640723AF2A7500578E96 /* UFCameraView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		275B640B23AF2B6400578E96 /* UFCameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275B640A23AF2B6400578E96 /* UFCameraView.xib */; };
 		276FFB2F23AFDB8E0034841F /* UFCameraLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276FFB2E23AFDB8E0034841F /* UFCameraLayerView.swift */; };
+		277C690D23C0B2F60037782B /* UFConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277C690C23C0B2F60037782B /* UFConstant.swift */; };
 		27B7745923BE72FC00173572 /* Vid.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B7745423BE72FB00173572 /* Vid.png */; };
 		27B7745A23BE72FC00173572 /* video_shutter.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B7745523BE72FB00173572 /* video_shutter.png */; };
 		27B7745B23BE72FC00173572 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B7745623BE72FB00173572 /* camera.png */; };
 		27B7745C23BE72FC00173572 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B7745723BE72FC00173572 /* menu.png */; };
 		27B7745D23BE72FC00173572 /* still_shutter.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B7745823BE72FC00173572 /* still_shutter.png */; };
+		27BD843B23C048DA00E53751 /* rotate_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BD843A23C048DA00E53751 /* rotate_camera.png */; };
+		27BD843F23C04D1D00E53751 /* flash_advance.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BD843C23C04D1C00E53751 /* flash_advance.png */; };
+		27BD844023C04D1D00E53751 /* no_flash.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BD843D23C04D1C00E53751 /* no_flash.png */; };
+		27BD844123C04D1D00E53751 /* with_flash.png in Resources */ = {isa = PBXBuildFile; fileRef = 27BD843E23C04D1D00E53751 /* with_flash.png */; };
+		27BD844423C04E7900E53751 /* UFSettingsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD844323C04E7900E53751 /* UFSettingsContainer.swift */; };
+		27BD844623C04E8900E53751 /* UFSettingsContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27BD844523C04E8900E53751 /* UFSettingsContainer.xib */; };
+		27BD844923C04EBF00E53751 /* UFMenuContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD844823C04EBF00E53751 /* UFMenuContainer.swift */; };
+		27BD844B23C04ECB00E53751 /* UFMenuContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27BD844A23C04ECB00E53751 /* UFMenuContainer.xib */; };
+		27BD845023C04F6D00E53751 /* UFSettingsContainerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BD844E23C04F6D00E53751 /* UFSettingsContainerTableViewCell.swift */; };
+		27BD845123C04F6D00E53751 /* UFSettingsContainerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27BD844F23C04F6D00E53751 /* UFSettingsContainerTableViewCell.xib */; };
+		27CAC94A24C074B8008183CF /* Mode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27CAC94924C074B8008183CF /* Mode.plist */; };
+		27CAC95324C0805C008183CF /* UFCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CAC95124C0805C008183CF /* UFCameraViewController.swift */; };
+		27CAC95424C0805C008183CF /* UFCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27CAC95224C0805C008183CF /* UFCameraViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,14 +116,26 @@
 		275B63F123AEA4F600578E96 /* UFCameraEGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UFCameraEGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		275B63F523AEA4F600578E96 /* UFCameraEGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraEGUITests.swift; sourceTree = "<group>"; };
 		275B63F723AEA4F600578E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		275B640723AF2A7500578E96 /* UFCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraView.swift; sourceTree = "<group>"; };
-		275B640A23AF2B6400578E96 /* UFCameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UFCameraView.xib; sourceTree = "<group>"; };
 		276FFB2E23AFDB8E0034841F /* UFCameraLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraLayerView.swift; sourceTree = "<group>"; };
+		277C690C23C0B2F60037782B /* UFConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFConstant.swift; sourceTree = "<group>"; };
 		27B7745423BE72FB00173572 /* Vid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vid.png; sourceTree = "<group>"; };
 		27B7745523BE72FB00173572 /* video_shutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_shutter.png; sourceTree = "<group>"; };
 		27B7745623BE72FB00173572 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		27B7745723BE72FC00173572 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		27B7745823BE72FC00173572 /* still_shutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = still_shutter.png; sourceTree = "<group>"; };
+		27BD843A23C048DA00E53751 /* rotate_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotate_camera.png; sourceTree = "<group>"; };
+		27BD843C23C04D1C00E53751 /* flash_advance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flash_advance.png; sourceTree = "<group>"; };
+		27BD843D23C04D1C00E53751 /* no_flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_flash.png; sourceTree = "<group>"; };
+		27BD843E23C04D1D00E53751 /* with_flash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = with_flash.png; sourceTree = "<group>"; };
+		27BD844323C04E7900E53751 /* UFSettingsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFSettingsContainer.swift; sourceTree = "<group>"; };
+		27BD844523C04E8900E53751 /* UFSettingsContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UFSettingsContainer.xib; sourceTree = "<group>"; };
+		27BD844823C04EBF00E53751 /* UFMenuContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFMenuContainer.swift; sourceTree = "<group>"; };
+		27BD844A23C04ECB00E53751 /* UFMenuContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UFMenuContainer.xib; sourceTree = "<group>"; };
+		27BD844E23C04F6D00E53751 /* UFSettingsContainerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFSettingsContainerTableViewCell.swift; sourceTree = "<group>"; };
+		27BD844F23C04F6D00E53751 /* UFSettingsContainerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UFSettingsContainerTableViewCell.xib; sourceTree = "<group>"; };
+		27CAC94924C074B8008183CF /* Mode.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Mode.plist; sourceTree = "<group>"; };
+		27CAC95124C0805C008183CF /* UFCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UFCameraViewController.swift; sourceTree = "<group>"; };
+		27CAC95224C0805C008183CF /* UFCameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UFCameraViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +267,7 @@
 				275B63DC23AEA4F600578E96 /* Assets.xcassets */,
 				275B63DE23AEA4F600578E96 /* LaunchScreen.storyboard */,
 				275B63E123AEA4F600578E96 /* Info.plist */,
+				27CAC94924C074B8008183CF /* Mode.plist */,
 			);
 			path = UFCameraEG;
 			sourceTree = "<group>";
@@ -270,9 +294,10 @@
 			isa = PBXGroup;
 			children = (
 				273616F923BFD4A0005276C4 /* FeatureList.plist */,
+				277C690C23C0B2F60037782B /* UFConstant.swift */,
 				276FFB2C23AFDB630034841F /* Module */,
-				275B640723AF2A7500578E96 /* UFCameraView.swift */,
-				275B640A23AF2B6400578E96 /* UFCameraView.xib */,
+				27CAC95124C0805C008183CF /* UFCameraViewController.swift */,
+				27CAC95224C0805C008183CF /* UFCameraViewController.xib */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -280,6 +305,8 @@
 		276FFB2C23AFDB630034841F /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				27BD844723C04EAA00E53751 /* Menu Container */,
+				27BD844223C04E3200E53751 /* Settings Container */,
 				276FFB2D23AFDB700034841F /* Camera Layer */,
 			);
 			path = Module;
@@ -296,6 +323,10 @@
 		27B7745323BE72CC00173572 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				27BD843C23C04D1C00E53751 /* flash_advance.png */,
+				27BD843D23C04D1C00E53751 /* no_flash.png */,
+				27BD843E23C04D1D00E53751 /* with_flash.png */,
+				27BD843A23C048DA00E53751 /* rotate_camera.png */,
 				273616FB23BFD9D2005276C4 /* settings.png */,
 				27B7745623BE72FB00173572 /* camera.png */,
 				27B7745723BE72FC00173572 /* menu.png */,
@@ -306,6 +337,42 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		27BD844223C04E3200E53751 /* Settings Container */ = {
+			isa = PBXGroup;
+			children = (
+				27BD844C23C04F1200E53751 /* View */,
+				27BD844D23C04F1F00E53751 /* Source */,
+			);
+			path = "Settings Container";
+			sourceTree = "<group>";
+		};
+		27BD844723C04EAA00E53751 /* Menu Container */ = {
+			isa = PBXGroup;
+			children = (
+				27BD844823C04EBF00E53751 /* UFMenuContainer.swift */,
+				27BD844A23C04ECB00E53751 /* UFMenuContainer.xib */,
+			);
+			path = "Menu Container";
+			sourceTree = "<group>";
+		};
+		27BD844C23C04F1200E53751 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27BD844E23C04F6D00E53751 /* UFSettingsContainerTableViewCell.swift */,
+				27BD844F23C04F6D00E53751 /* UFSettingsContainerTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27BD844D23C04F1F00E53751 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				27BD844323C04E7900E53751 /* UFSettingsContainer.swift */,
+				27BD844523C04E8900E53751 /* UFSettingsContainer.xib */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -314,7 +381,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				272AD87F23AEA3500089589D /* UFCamera.h in Headers */,
-				275B640923AF2A9C00578E96 /* UFCameraView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +490,7 @@
 				TargetAttributes = {
 					272AD86D23AEA3500089589D = {
 						CreatedOnToolsVersion = 11.2.1;
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1160;
 					};
 					272AD87623AEA3500089589D = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -470,13 +536,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				273616FC23BFD9D2005276C4 /* settings.png in Resources */,
+				27BD844023C04D1D00E53751 /* no_flash.png in Resources */,
 				273616FA23BFD4A0005276C4 /* FeatureList.plist in Resources */,
+				27BD844B23C04ECB00E53751 /* UFMenuContainer.xib in Resources */,
 				27B7745D23BE72FC00173572 /* still_shutter.png in Resources */,
-				275B640B23AF2B6400578E96 /* UFCameraView.xib in Resources */,
 				27B7745C23BE72FC00173572 /* menu.png in Resources */,
+				27BD845123C04F6D00E53751 /* UFSettingsContainerTableViewCell.xib in Resources */,
 				27B7745A23BE72FC00173572 /* video_shutter.png in Resources */,
 				27B7745B23BE72FC00173572 /* camera.png in Resources */,
+				27BD843F23C04D1D00E53751 /* flash_advance.png in Resources */,
+				27BD844623C04E8900E53751 /* UFSettingsContainer.xib in Resources */,
+				27BD844123C04D1D00E53751 /* with_flash.png in Resources */,
 				27B7745923BE72FC00173572 /* Vid.png in Resources */,
+				27CAC95424C0805C008183CF /* UFCameraViewController.xib in Resources */,
+				27BD843B23C048DA00E53751 /* rotate_camera.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				275B63E023AEA4F600578E96 /* LaunchScreen.storyboard in Resources */,
+				27CAC94A24C074B8008183CF /* Mode.plist in Resources */,
 				275B63DD23AEA4F600578E96 /* Assets.xcassets in Resources */,
 				275B63DB23AEA4F400578E96 /* Main.storyboard in Resources */,
 			);
@@ -518,8 +592,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27BD845023C04F6D00E53751 /* UFSettingsContainerTableViewCell.swift in Sources */,
 				276FFB2F23AFDB8E0034841F /* UFCameraLayerView.swift in Sources */,
-				275B640823AF2A7500578E96 /* UFCameraView.swift in Sources */,
+				27BD844423C04E7900E53751 /* UFSettingsContainer.swift in Sources */,
+				277C690D23C0B2F60037782B /* UFConstant.swift in Sources */,
+				27CAC95324C0805C008183CF /* UFCameraViewController.swift in Sources */,
+				27BD844923C04EBF00E53751 /* UFMenuContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

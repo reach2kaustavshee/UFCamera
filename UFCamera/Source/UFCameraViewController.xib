@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UFCameraViewController" customModule="UFCamera">
+            <connections>
+                <outlet property="btnShutter" destination="GiT-1w-htU" id="1Cz-8T-wXo"/>
+                <outlet property="cameraLayer" destination="IMU-0z-fLZ" id="kou-JD-Keg"/>
+                <outlet property="menuButton" destination="Ami-MO-VXO" id="BEh-yO-dL8"/>
+                <outlet property="menuWidthConstraint" destination="cJe-Uw-hW2" id="aub-Sw-Qvx"/>
+                <outlet property="settingsButton" destination="hCu-ff-t5D" id="Eg9-zj-dmc"/>
+                <outlet property="settingsWidthContraint" destination="CU9-Bz-j5z" id="2Ej-gD-ec1"/>
+                <outlet property="view" destination="zuR-7y-XrC" id="UWs-WQ-6DN"/>
+                <outlet property="viewMenuContainer" destination="GbW-WN-t3k" id="F0B-jW-WO9"/>
+                <outlet property="viewSettingsContainer" destination="xde-Au-Zlm" id="EB8-fO-yql"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zuR-7y-XrC">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMU-0z-fLZ" customClass="UFCameraLayerView" customModule="UFCamera" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <button opaque="NO" tag="1111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiT-1w-htU">
+                    <rect key="frame" x="141" y="431.5" width="38" height="38.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="GiT-1w-htU" secondAttribute="height" multiplier="1:1" id="Njp-NC-8bU"/>
+                    </constraints>
+                    <state key="normal" image="still_shutter.png"/>
+                </button>
+                <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GbW-WN-t3k">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="480"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" identifier="consMenuWidth" id="cJe-Uw-hW2"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ami-MO-VXO">
+                    <rect key="frame" x="86" y="16" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Ami-MO-VXO" secondAttribute="height" multiplier="1:1" id="5xf-Ij-blp"/>
+                    </constraints>
+                    <state key="normal" image="menu.png"/>
+                </button>
+                <view tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xde-Au-Zlm" customClass="UFSettingsContainer" customModule="UFCamera" customModuleProvider="target">
+                    <rect key="frame" x="250" y="0.0" width="70" height="480"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" identifier="consSettingsWidth" id="CU9-Bz-j5z"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCu-ff-t5D">
+                    <rect key="frame" x="211" y="16" width="23" height="23"/>
+                    <state key="normal" image="settings.png"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ami-MO-VXO" firstAttribute="leading" secondItem="GbW-WN-t3k" secondAttribute="trailing" constant="16" id="2Zb-uH-9SG"/>
+                <constraint firstItem="Q2c-B8-K9S" firstAttribute="bottom" secondItem="GiT-1w-htU" secondAttribute="bottom" constant="10" id="39Z-gW-2Gb"/>
+                <constraint firstItem="GiT-1w-htU" firstAttribute="width" secondItem="zuR-7y-XrC" secondAttribute="width" multiplier="0.12" id="3CO-xu-LOa"/>
+                <constraint firstItem="xde-Au-Zlm" firstAttribute="top" secondItem="Q2c-B8-K9S" secondAttribute="top" id="3N0-n1-Au4"/>
+                <constraint firstItem="hCu-ff-t5D" firstAttribute="centerY" secondItem="Ami-MO-VXO" secondAttribute="centerY" id="7ji-cO-Dvi"/>
+                <constraint firstAttribute="bottom" secondItem="GbW-WN-t3k" secondAttribute="bottom" id="8xi-3Z-foo"/>
+                <constraint firstItem="Ami-MO-VXO" firstAttribute="height" secondItem="zuR-7y-XrC" secondAttribute="height" multiplier="0.071875" id="9h4-nf-h89"/>
+                <constraint firstItem="hCu-ff-t5D" firstAttribute="height" secondItem="Ami-MO-VXO" secondAttribute="height" id="9jt-n5-NUL"/>
+                <constraint firstItem="Ami-MO-VXO" firstAttribute="top" secondItem="Q2c-B8-K9S" secondAttribute="top" constant="16" id="9ui-A9-hmd"/>
+                <constraint firstItem="Q2c-B8-K9S" firstAttribute="bottom" secondItem="IMU-0z-fLZ" secondAttribute="bottom" id="BLR-Pg-f2P"/>
+                <constraint firstItem="GbW-WN-t3k" firstAttribute="top" secondItem="zuR-7y-XrC" secondAttribute="top" id="EEC-qd-qVb"/>
+                <constraint firstItem="IMU-0z-fLZ" firstAttribute="top" secondItem="Q2c-B8-K9S" secondAttribute="top" id="Ifl-2Z-cXH">
+                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstItem="Q2c-B8-K9S" firstAttribute="trailing" secondItem="IMU-0z-fLZ" secondAttribute="trailing" id="LsU-uZ-aih"/>
+                <constraint firstItem="GiT-1w-htU" firstAttribute="centerX" secondItem="Q2c-B8-K9S" secondAttribute="centerX" id="Pwo-mA-7g1"/>
+                <constraint firstItem="hCu-ff-t5D" firstAttribute="width" secondItem="Ami-MO-VXO" secondAttribute="width" id="QeW-l9-1fU"/>
+                <constraint firstItem="xde-Au-Zlm" firstAttribute="leading" secondItem="hCu-ff-t5D" secondAttribute="trailing" constant="16" id="aBD-3O-DXo"/>
+                <constraint firstItem="IMU-0z-fLZ" firstAttribute="leading" secondItem="Q2c-B8-K9S" secondAttribute="leading" id="enq-hF-hr6"/>
+                <constraint firstItem="Ami-MO-VXO" firstAttribute="width" secondItem="zuR-7y-XrC" secondAttribute="width" multiplier="0.071875" id="f5J-tg-JKk"/>
+                <constraint firstItem="xde-Au-Zlm" firstAttribute="bottom" secondItem="Q2c-B8-K9S" secondAttribute="bottom" id="gkf-eC-ygX"/>
+                <constraint firstItem="GiT-1w-htU" firstAttribute="width" secondItem="zuR-7y-XrC" secondAttribute="height" multiplier="0.127083" id="obo-qr-bdx"/>
+                <constraint firstItem="GbW-WN-t3k" firstAttribute="leading" secondItem="zuR-7y-XrC" secondAttribute="leading" id="ptT-vQ-Jon"/>
+                <constraint firstItem="Q2c-B8-K9S" firstAttribute="trailing" secondItem="xde-Au-Zlm" secondAttribute="trailing" id="tfY-QF-hvz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q2c-B8-K9S"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="f5J-tg-JKk"/>
+                    <exclude reference="9h4-nf-h89"/>
+                    <exclude reference="3CO-xu-LOa"/>
+                    <exclude reference="obo-qr-bdx"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="9h4-nf-h89"/>
+                    <include reference="obo-qr-bdx"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="f5J-tg-JKk"/>
+                    <include reference="3CO-xu-LOa"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-543.75" y="221.25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu.png" width="150" height="150"/>
+        <image name="settings.png" width="150" height="182"/>
+        <image name="still_shutter.png" width="150" height="150"/>
+    </resources>
+</document>
